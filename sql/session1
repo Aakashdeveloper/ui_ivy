@@ -1,0 +1,106 @@
+primarykey
+forgienkey
+dml & ddl
+noramalization
+
+notnull
+unique
+default
+
+noramalization
+> process of efficiently organize your data
+
+> to Eliminate redundant data
+> to only store related data in table
+
+Benefits:
+> Reduce storage space
+> Reduce insert, update & delete
+> improve query performance
+
+1N
+2N  
+3N 
+
+////////////////////////////////////////////////////////////////
+Student | Year | Class
+Paul    | 11   | Math
+Peggy   | 10   | History
+Paul    | 11   | Math
+Brain   | 8    | English, Chemistry
+Linda   | 7    | Math, History, Chemistry
+
+What is 1 NF
+> no repeated row of data
+> column only contains single value
+> table should has primary key
+
+id | Student | Year | Class
+1  | Paul    | 11   | Math
+2  | Peggy   | 10   | History
+3  | Brain   | 8    | Chemistry
+4  | Brain   | 8    | English
+5  | Linda   | 7    | Math
+6  | Linda   | 7    | History
+7  | Linda   | 7    | Chemistry
+
+//2NF////
+
+Student | Subject | GRADE | AGE
+Natasha | React   | A     | 15
+Natasha | Angular | B     | 15
+Daniel  | Node    | C     | 16
+Simon   | React   | A     | 14
+Emma    | SQL     | B     | 14
+
+2Nf 
+> They conform to 1NF
+> every column that is not a primary key of the table is 
+dependent on the whole of the primary
+
+Student | AGE  | Name
+1       | 17   | Natasha
+2       | 16   | Daniel
+3       | 14   | Simon
+4       | 14   | Emma
+
+id      | Subject  
+1       | React
+2       | Angular  
+3       | Node   
+4       | Sql 
+
+id| Student_id | Subject | GRADE
+1 | 1          | 1       | A    
+2 | 1          | 2       | B     
+3 | 2          | 3       | C     
+4 | 3          | 1       | A     
+5 | 4          | 4       | B
+
+3Nf 
+> They conform to 2NF
+> every column that is not a primary key of the table is only
+dependent on the whole of the primary key
+
+//3NF////
+Subject | YEAR | Star PUPIL | Star PUPIL date 
+MATH    | 2015 | Mathew     | 1999-03-21
+Eng     | 2015 | William    | 1999-03-21
+Hind    | 2015 | Georgina   | 1999-03-21
+MATH    | 2016 | Brain      | 1999-03-21
+Phys    | 2017 | William    | 1999-03-21
+
+Subject | YEAR | Star PUPIL 
+MATH    | 2015 | Mathew    
+Eng     | 2015 | William   
+Hind    | 2015 | Georgina    
+MATH    | 2016 | Brain    
+Phys    | 2017 | William    
+
+
+Star PUPIL | Star PUPIL date 
+Mathew     | 1999-03-21
+William    | 1999-03-21
+Georgina   | 1999-03-21
+Brain      | 1999-03-21
+William    | 1999-03-21
