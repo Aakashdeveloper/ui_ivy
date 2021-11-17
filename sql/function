@@ -42,46 +42,6 @@ Group BY customer_id, screening_id
 HAVING count(id)>1
 
 
-///////////SubQueries////////
-Non correlated
-correlated
-/////////////
-[delhi,mumbai,amasterdam]
-
-
-SELECT id,start_time fron screenings
-where film_id IN(
-    SELECT id FROM films where length_min>120
-)
-
-
-/////
-Non correlated
-///////
-The inner query can run independently of the outer query
-
-SELECT id,start_time fron screenings
-where film_id IN(
-    SELECT id FROM films where length_min>120
-)
-
->>inner query run first and produces a result set which is 
-than used by outer query
-
-
-/////
-Correlated
-///////
-
-The inner query cannot run independently of the outer query
-the inner query for every row in the outer query
-
-SELECT screening_id,customer_id,
-(
-    SELECT count(seat_id) from reserved_seat where booking_id = b.id
-)
-from bookings b
-
 
 //////////
 MySql functions
@@ -103,5 +63,26 @@ SELECT start_time,DATE(start_time) from screenings;
 SELECT start_time,DATE(start_time),Month(start_time) from screenings;
 
 SELECT * from screenings where DATE(start_time) = '2017-10-04';
+SELECT start_time,date_format(start_time, "%M %d %Y") from screenings;
 
 SELECT * from screenings where DATE(start_time) between '2017-10-03' AND '2017-10-04';
+
+
+SELECT OrderID, Quantity,
+CASE 
+WHEN Quantity > 30 THEN 'The quantity is greater than 30'
+WHEN Quantity = 30 THEN 'The quantity is 30'
+ELSE 'The quantity is under 30'
+END 
+AS QuantityText
+FROM OrderDetails;
+
+SELECT film_id, start_time,
+CASE 
+WHEN DATE(start_time) ='2017-10-01' THEN 'This is first day of month'
+WHEN DATE(start_time) ='2017-10-02' THEN 'This is second day of month'
+WHEN DATE(start_time) ='2017-10-03' THEN 'This is third day of month'
+ELSE 'Next days after 3'
+END 
+AS Message
+FROM screenings;
