@@ -66,3 +66,15 @@ select id,name from films where id= theId;
 end $$
 
 call showFilm1(4);
+
+Concat()
+
+
+CREATE functions ticket_booking.readData(id)
+Return data_type as
+BEGIN 
+    SQL Statement
+    RETURN value
+END;
+
+SELECT Add(room_id, seat_number) As sum from seats
