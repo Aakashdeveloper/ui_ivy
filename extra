@@ -14,3 +14,46 @@ extension
 
 ------------
 SEO 
+
+/////////css/////
+
+inline > styletag > stylesheet
+
+h1
+{
+    color:red,
+    font-size:30px,
+    text-align:center,
+    font-weight:bold
+}
+
+inline{
+    color:red,
+    font-size:30px
+}
+
+styletag{
+    color:orange,
+    font-size:40px,
+    text-align:center
+}
+
+stylesheet{
+    color:green,
+    font-weight:bold,
+    text-align:right
+}
+
+tagname
+> when we have to target by tagname like (a,p,h1)
+id (#)
+> use to target the unique element
+class (.)
+> use to target the multiple element
+
+
+solid
+dotted
+groove
+dashed
+double

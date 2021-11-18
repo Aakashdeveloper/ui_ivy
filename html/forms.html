@@ -7,9 +7,14 @@
             <h2>Employee Form</h2>
         </center>
         <div>
-            <form action="#" method="GET">
+            <form action="#" method="GET"  oninput="out.value=parseInt(range.value)+parseInt(uinput.value)+parseInt(uinput1.value)">
                 <fieldset>
                     <legend>Employee Form</legend>
+                    <div>
+                         EID
+                        <input name="eid" type="text" value="AYHN76TG0" readonly/>
+                        <input name="sid" type="hidden" value="AYHN76TG0"/>
+                    </div>
                     <div>
                         <label for="firstname">FirstName*</label>
                         <input name="fname" type="text" id="firstname" required/>
@@ -17,12 +22,14 @@
                     <br/>
                     <div>
                         <label for="lastname">LastName</label>
-                        <input name="lname" type="text" value="Michal" id="lastname"/>
+                        <input name="lname" type="text" value="Michal" id="lastname"
+                        maxlength="5"/>
                     </div>
                     <br/>
                     <div>
                         <label>Email</label>
-                        <input name="email" type="email" placeholder="a@a.com"/>
+                        <input name="email" type="text" placeholder="a@a.com" 
+                        pattern="^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})$"/>
                     </div>
                     <br/>
                     <div>
@@ -30,7 +37,78 @@
                         <input name="pwd" type="password" id="password" minlength="8"/>
                     </div>
                     <br/>
+                    <div>
+                        <label for="upload">Upload</label>
+                        <input name="profile" type="file" id="upload"/>
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="date">Date</label>
+                        <input name="date" type="date" id="date" value="2021-11-21"/>
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="range1">Rating(0-50)</label>
+                        <input name="rating" type="range" id="range1" value="50" max="50" min="1"/>
+                    </div>
+                    <br/>
+                    <div>
+                        <label>
+                            <input type="radio" value="female" name="gender"/> Female
+                        </label>
+                        <label>
+                            <input type="radio" value="male" name="gender"/> Male
+                        </label>                      
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" value="javascript" name="language"/> JavaScript
+                        </label>
+                        <label>
+                            <input type="checkbox" value="node" name="language"/> Node
+                        </label> 
+                        <label>
+                            <input type="checkbox" value="react" name="language"/> React
+                        </label>                      
+                    </div>
+                    <div>
+                        <label for="range">Rating(0-50)</label>
+                        <input name="rating" type="range" id="range" value="50" max="50" min="1"/> +
+                        <input type="number" id="uinput" value="10"/>
+                        <input type="number" id="uinput1" value="10"/>
+                        = <output name="out" for="range uinput uinput1"></output>
+                    </div>
+                    <div>
+                        <label>Select Your City</label>
+                        <select name="city">
+                            <option value="1">Delhi</option>
+                            <option value="2">London</option>
+                            <option value="3">Paris</option>
+                            <option value="4">Amsterdam</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div>
+                        <label for="city">Choose Your City</label>
+                        <input list="cities" name="mycity" id="city"/>
+                        <datalist id="cities">
+                            <option value="delhi" selected>
+                            <option value="mumbai">
+                            <option value="london">
+                            <option value="lenchesiten">
+                            <option value="newyork">
+                            <option value="nice"> 
+                            <option value="amsterdam">
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" rows="5" cols="60">
+                        </textarea>
+                    </div>
+
                     <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
                 </fieldset>
                 
             </form>
