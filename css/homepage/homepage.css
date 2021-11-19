@@ -150,3 +150,89 @@ select{
     font-size:24px;
     line-height: 2;
 }
+
+@media screen and (max-width:1600px){
+    body{
+        background-color:#ecd4c9
+    }
+}
+
+
+@media screen and (max-width:1400px){
+    body{
+        background-color:#b9f6ec
+    }
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-color:#c2f6b9
+    }
+    #heading{
+        margin-top:16%;
+    }
+    .dropdown{
+        margin-top:24%;
+        margin-left: 24%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        background-color:#f6c4b7
+    }
+    .tileContainer{
+        width:40%;
+    }
+    #heading{
+        margin-top:20%;
+        font-size:35px;
+    }
+    .dropdown{
+        margin-top:26%;
+        margin-left: 26%;
+    }
+    #search{
+        height:350px;
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color:#c1b7f6
+    }
+    .tileContainer{
+        width:60%;
+    }
+    #heading{
+        margin-top:22%;
+        font-size:35px;
+    }
+    .dropdown{
+        margin-top:29%;
+    }
+    select{
+        width:70%
+    }
+    .restaurantSelect{
+        width:70%;
+    }
+    #quicksearch{
+        width:80%;
+        margin-left:22%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-color:#fdc0eb
+    }
+    #heading{
+        margin-top:38%;
+        font-size:25px;
+    }
+    .dropdown{
+        margin-top:48%;
+    }
+}

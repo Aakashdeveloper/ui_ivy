@@ -59,3 +59,35 @@ a{
 .checked{
     color: red;
 }
+
+#cfeedback{
+    margin-left:3%;
+    color:green
+}
+
+.icons{
+    display: inline-block;
+    margin-left:2%
+}
+
+#stock{
+    font-size: 40px;
+    color:green
+}
+
+button{
+    height:48px;
+    width:250px;
+    font-size:30px;
+    color:white;
+    background-color:orange
+}
+#Atoc{
+    background-color:green
+}
+
+@media screen and (max-width:1600px){
+    body{
+        background-color:lightgray
+    }
+}
