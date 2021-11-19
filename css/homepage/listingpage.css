@@ -1,0 +1,68 @@
+body{
+    margin:auto ;
+    background-color: #ecd4c9
+}
+#header{
+    height:60px;
+    background-color:#d1a292;
+}
+
+#header> #icon{
+    font-size: 13px;
+    color: #13648c;
+    margin-left: 1%;
+    margin-top: 0%;
+    position:absolute;
+}
+
+#social{
+    height:60px;
+    width:200px;
+    float: right;
+    margin-right: 1%;
+}
+.slogo{
+    height:50px;
+    width:50px
+}
+.logoyt{
+    width:80px
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.filter{
+    height:600px;
+    width:20%;
+    border:5px solid gray;
+    float: left;
+}
+
+.content{
+    height:1000px;
+    width:65%;
+    float: left;
+    margin-left: 5%;
+    margin-top:-2%
+}
+
+.list_content{
+    width:100%;
+    box-shadow: 20px 30px 40px gray;
+    height:300px;
+    margin-top:2%
+}
+
+h1,h2{
+    text-align: center;
+}
+.radio{
+    display:block;
+    line-height:1.4
+}

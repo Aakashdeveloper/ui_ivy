@@ -1,0 +1,61 @@
+body{
+    margin:auto ;
+    background-color: #ecd4c9
+}
+#header{
+    height:60px;
+    background-color:#d1a292;
+}
+
+#header> #icon{
+    font-size: 13px;
+    color: #13648c;
+    margin-left: 1%;
+    margin-top: 0%;
+    position:absolute;
+}
+
+#social{
+    height:60px;
+    width:200px;
+    float: right;
+    margin-right: 1%;
+}
+.slogo{
+    height:50px;
+    width:50px
+}
+.logoyt{
+    width:80px
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.tileImage{
+    height: 600px;
+    width:45%;
+    float: left;
+}
+.tileContent{
+    height: 600px;
+    width:45%;
+    margin-left: 2%;
+    float: left;
+}
+
+.Image > img{
+    height: 500px;
+    width:95%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.checked{
+    color: red;
+}
