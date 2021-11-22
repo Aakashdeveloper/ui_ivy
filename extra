@@ -59,3 +59,20 @@ dashed
 double
 
 https://fontawesome.com/v5.15/icons/truck?style=solid
+
+bootstrap3
+
+lg < 1200
+md < 992
+sm < 768
+xs >768
+
+12/4 = 3
+12/2  = 6
+
+bootstrap4
+xl < 1200
+lg < 992
+md < 768
+sm < 576
+col- > 576

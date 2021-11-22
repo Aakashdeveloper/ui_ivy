@@ -3,16 +3,185 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="first.css">
     </head>
     <body>
         <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#edurekanav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Developer Funnel</a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="edurekanav">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">
+                                <span class="glyphicon glyphicon-log-in"></span> LogIn</a></li>
+                            <li><a href="#">
+                                <span class="glyphicon glyphicon-user"></span> SignUp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <center>
                 <h1>BootStrap</h1>
             </center>
             <hr/>
-            <p>
-                Amsterdam is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
-            </p>
+            <div class="jumbotron">
+                <h1>Developer Funnel</h1>
+                <p>
+                    Amsterdam is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+                </p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#devModal">Details</button>
+            </div>
+            <div id="devModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                            <h4 class="modal-title">Developer Funnel</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some Text Here</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                               Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel slide" id="mySlider" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mySlider" data-slide-to="1" ></li>
+                    <li data-target="#mySlider" data-slide-to="2" ></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="amsterdam.jpeg"/>
+                    </div>
+                    <div class="item">
+                        <img src="helsinki.jpeg"/>
+                    </div>
+                    <div class="item">
+                        <img src="london.jpeg"/>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#mySlider" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#mySlider" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <br/>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#amsterdam">
+                            Amsterdam
+                        </a>
+                    </h4>
+                </div>
+                <div id="amsterdam" class="panel panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>
+                            Amsterdam is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#delhi">
+                            Delhi
+                        </a>
+                    </h4>
+                </div>
+                <div id="delhi" class="panel panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>
+                            Delhi is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h4>London</h4>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        London is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+                    </p>
+                </div>
+            </div>
+            <br/>
+
+            <span class="glyphicon glyphicon-trash"></span>
+            <span class="label label-primary">BreakFast</span>
+            <span class="label label-success">Lunch</span>
+            <span class="label label-warning">Dinner</span>
+            <img src="nightlife.png" class="img-responsive"/>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2>Studnets</h2>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>RollNo</th>
+                                <th>Name</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <th>John</th>
+                                <th>Ui</th>
+                            </tr>
+                            <tr class="info">
+                                <th>2</th>
+                                <th>Neha</th>
+                                <th>AI</th>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <th>Priya</th>
+                                <th>React</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+           
+            
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" id="first"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" id="second"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" id="third"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" id="fourth"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" id="fifth"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" id="sixth"></div>
+            </div>
             <button class="btn btn-primary">Click</button>
             <button class="btn btn-success">Click</button>
             <button class="btn btn-warning btn-xs">Click</button>
