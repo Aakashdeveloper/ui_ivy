@@ -51,7 +51,20 @@ a{
     position:absolute;
     text-align: center;
     font-size:80px;
-    color:red
+    color:red;
+    animation-name: logoanimation;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logoanimation{
+    0% {margin-left: 10%;}
+    20% {margin-left: 30%;}
+    40% {margin-left: 40%;}
+    50% {margin-left: 60%;}
+    70% {margin-left: 80%;}
+    80% {margin-left: 60%;}
+    100% {margin-left: 40%;}
 }
 
 #logo > span{
@@ -100,6 +113,12 @@ select{
     font-weight:bold;
     display:block;
     margin-left:2%;
+    transition: margin-left 2s;
+}
+
+#QuickHeading:hover{
+    color:green;
+    margin-left:40%
 }
 
 #QuickSubHeading{
@@ -119,6 +138,10 @@ select{
     margin-bottom:1%;
     box-shadow: 20px 30px 40px gray;
     border-radius: 10%;
+}
+
+.tileContainer:hover{
+    transform: scale(1.1);
 }
 .tileComponent1{
     width:100%;
