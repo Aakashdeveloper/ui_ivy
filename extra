@@ -81,9 +81,9 @@ col- > 576
 
 > DataTypes
 > variable
-> alert console prompt
 > Operations
 > String literals
+> Functions
 > Math
 > let, const
 > localstorage
@@ -94,18 +94,18 @@ col- > 576
 > ternery Operations
 > array
 > loops
-> Functions
 > JSON
 
 
 > DoM
 > Calc
-> Form validation
-> Event
-> dummyAPi jsonserver
 > dark/light mode
 > currenyConvertor
 > promis
 > async await
-> Geolocation
 > Dynamic DropDown
+
+> Geolocation
+> Form validation
+> Event
+> dummyAPi jsonserver
