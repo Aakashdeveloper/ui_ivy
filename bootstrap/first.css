@@ -45,3 +45,8 @@
     width:100%;
    
 }
+
+.box{
+    height:100px;
+    width:200px !important
+}

@@ -76,3 +76,36 @@ lg < 992
 md < 768
 sm < 576
 col- > 576
+
+
+
+> DataTypes
+> variable
+> alert console prompt
+> Operations
+> String literals
+> Math
+> let, const
+> localstorage
+> sessionStorage
+> github 
+> condition
+> if else
+> ternery Operations
+> array
+> loops
+> Functions
+> JSON
+
+
+> DoM
+> Calc
+> Form validation
+> Event
+> dummyAPi jsonserver
+> dark/light mode
+> currenyConvertor
+> promis
+> async await
+> Geolocation
+> Dynamic DropDown
