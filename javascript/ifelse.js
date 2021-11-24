@@ -29,3 +29,14 @@ if(a%2 == 0){
 else{
     console.log(`Number ${a} is odd`)
 }
+
+var a =10
+a>10?"hii":"Bie"
+'Bie'
+var a =10
+a==10?"hii":"Bie"
+'hii'
+
+
+var a =10
+condition?if true: if false
