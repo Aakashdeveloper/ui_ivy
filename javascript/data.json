@@ -1,0 +1,22 @@
+{
+  "employee": [
+    {
+      "uid": "25437",
+      "name": "John",
+      "email": "John@gmail.com",
+      "password": "12345678",
+      "cpassword": "12345678",
+      "city": "Mumbai",
+      "id": 1
+    },
+    {
+      "uid": "84919",
+      "name": "Nikita",
+      "email": "nikita@gmail.com",
+      "password": "56757656",
+      "cpassword": "56757656",
+      "city": "Pune",
+      "id": 2
+    }
+  ]
+}

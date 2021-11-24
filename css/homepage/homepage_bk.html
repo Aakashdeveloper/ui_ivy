@@ -2,7 +2,6 @@
     <head>
         <title>Home Page</title>
         <link href="homepage.css" rel="stylesheet" type="text/css"/>
-        <script src="homepage.js"></script>
     </head>
     <body>
         <div id="mainDiv">
@@ -30,10 +29,11 @@
                     Find The Best Restaurants Near You
                 </div>
                 <div class="dropdown">
-                    <select id="city" onChange="getHotel()">
+                    <select>
                         <option>-----SELECT CITY-----</option>
+                        <option>Delhi</option>
                     </select>
-                    <select class="restaurantSelect" id="hotels">
+                    <select class="restaurantSelect">
                         <option>-----SELECT Restaurants-----</option>
                         <option>SubWay</option>
                     </select>
@@ -128,8 +128,5 @@
                 </div>
             </div>
         </div>
-        <script>
-            window.onload = getCity()
-        </script>
     </body>
 </html>

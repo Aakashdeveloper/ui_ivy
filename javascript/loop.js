@@ -17,3 +17,12 @@ for(i=0;i<movies.length;i++){
 
 Avengers
 Jab We Met
+
+
+var a = ['Venice', 'Pune', 'London', 'Indore', 'Helsinki', 'Delhi', 'Boston', 'Amsterdam']
+
+for(i=0;i<a.length;i++){
+    console.log(a[i])
+}
+
+a.map((data) => {return `<p>${data}</p>`})

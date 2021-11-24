@@ -92,13 +92,8 @@ col- > 576
 > localstorage
 > sessionStorage
 > ternery Operations
-
 > array
 > loops
-> github 
-
-
-
 > DoM
 > Calc
 > dark/light mode
@@ -106,8 +101,31 @@ col- > 576
 > promis
 > async await
 > Dynamic DropDown
-
 > Geolocation
 > Form validation
 > Event
 > dummyAPi jsonserver
+
+https://nodejs.org/en/download/
+> open cmd
+> go inside the folder
+>npx json-server --watch data.json --port 7610  
+
+> github 
+> deployment
+
+https://git-scm.com/downloads
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/ivycode.git
+git push -u origin master
+
+git add .
+git commit -m "first commit"
+git push
+
+git clone https://github.com/Aakashdeveloper/ivycode
+
+git pull
